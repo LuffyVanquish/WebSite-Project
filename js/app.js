@@ -17,12 +17,12 @@ setInterval(function () {
 
     //Casque
     if (s1 == 0) {
-        document.getElementById("d1").innerHTML = 0;
-        document.getElementById("d2").innerHTML = 0;
-        document.getElementById("d3").innerHTML = 0;
-        document.getElementById("d4").innerHTML = 0;
-        document.getElementById("d5").innerHTML = 0;
-        document.getElementById("d6").innerHTML = 0;
+        document.getElementById("d1").innerHTML = 0; //Defence
+        document.getElementById("d2").innerHTML = 0; //Feu
+        document.getElementById("d3").innerHTML = 0; //Eau
+        document.getElementById("d4").innerHTML = 0; //Foudre
+        document.getElementById("d5").innerHTML = 0; //Glace
+        document.getElementById("d6").innerHTML = 0; //Dragon
 
     } else if (s1 == 1, 2) {
         document.getElementById("d1").innerHTML = 51;
