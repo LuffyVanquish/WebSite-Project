@@ -24,7 +24,7 @@ setInterval(function () {
         document.getElementById("d5").innerHTML = 0; //Glace
         document.getElementById("d6").innerHTML = 0; //Dragon
 
-    } else if (s1 == 1, 2) { //cuir
+    } else if (s1 == 1, 2) {
         document.getElementById("d1").innerHTML = 51;
         document.getElementById("d2").innerHTML = 2;
         document.getElementById("d3").innerHTML = 0;
