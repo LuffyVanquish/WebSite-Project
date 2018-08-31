@@ -1,0 +1,105 @@
+
+body{
+    background-color: #333333;
+}
+
+h1.title{
+    color: #B4B5B5;
+    
+}
+
+div#content div{
+    display: inline-block;
+    width: 48%;
+
+}
+
+div#content div.c_left{
+    vertical-align: top;
+    background-color: #3F4040;
+    height: 100%;
+
+}
+
+div#content div.c_right{
+    vertical-align: top;
+    background-color: #3F4040;
+    height: 100%;
+
+}
+
+nav.menu-nav ul li.btn{
+    list-style-type: none;
+    display: inline-block;
+    font-weight: bold;
+
+}
+
+nav.menu-nav ul li.btn a{
+    color: #B4B5B5;
+    text-decoration: none;
+    background-color: #555555;
+    padding: 10px;
+    border-radius: 15%;
+
+}
+
+nav.menu-nav ul li.btn:hover a{
+    background-color: #3F4040;
+    transition: 0.25s all;
+}
+
+footer{
+    color: rgb(99, 102, 102);
+
+}
+
+ul.list_btn{
+    background-color: #555555;
+    height: 40px;
+}
+
+ul.armor{
+    list-style-type: none;
+}
+
+/*tableau*/
+
+    /*select*/
+    select.shelmet{
+        background-color: #B4B5B5;
+        padding: 10px;
+        width: 100%;
+    }
+    select.schest{
+        background-color: #B4B5B5;
+        padding: 10px;
+        width: 100%;
+    }
+    select.sarms{
+        background-color: #B4B5B5;
+        padding: 10px;
+        width: 100%;
+    }
+    select.swaist{
+        background-color: #B4B5B5;
+        padding: 10px;
+        width: 100%;
+    }
+    select.slegs{
+        background-color: #B4B5B5;
+        padding: 10px;
+        width: 100%;
+    }
+    select.samulette{
+        background-color: #B4B5B5;
+        padding: 10px;
+        width: 100%;
+    }
+    /*ligne*/
+    td.ligne{
+        text-align: left;
+        width: 33%;
+        height: 33%;
+    }
+
