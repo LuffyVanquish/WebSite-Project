@@ -142,8 +142,6 @@ $("select").click(function () {
 
     }
 
-
-
     //Torse
     switch (s2) {
         case 0: //Default
@@ -642,13 +640,65 @@ $("select").click(function () {
 
     }
 
+    //Amulette
+    switch (s6) {
+        case 1: //amulette1
+
+            //Nom Talent
+            document.getElementById("t26").innerHTML = "Spartiate";
+            document.getElementById("t27").innerHTML = "";
+            document.getElementById("t28").innerHTML = "";
+            document.getElementById("t29").innerHTML = "";
+            document.getElementById("t30").innerHTML = "";
+
+            //Niv Talent
+            document.getElementById("nt26").innerHTML = 1;
+            document.getElementById("nt27").innerHTML = "";
+            document.getElementById("nt28").innerHTML = "";
+            document.getElementById("nt29").innerHTML = "";
+            document.getElementById("nt30").innerHTML = "";
+
+        break;
+
+        case 2: //amulette2
+
+            //Nom Talent
+            document.getElementById("t26").innerHTML = "Cercle de vie";
+            document.getElementById("t27").innerHTML = "";
+            document.getElementById("t28").innerHTML = "";
+            document.getElementById("t29").innerHTML = "";
+            document.getElementById("t30").innerHTML = "";
+
+            //Niv Talent
+            document.getElementById("nt26").innerHTML = 1;
+            document.getElementById("nt27").innerHTML = "";
+            document.getElementById("nt28").innerHTML = "";
+            document.getElementById("nt29").innerHTML = "";
+            document.getElementById("nt30").innerHTML = "";
+
+            break;
+    }
+
+    //addition defence total
     document.getElementById("d31").innerHTML = (parseFloat(document.getElementById("d1").textContent) + parseFloat(document.getElementById("d7").textContent) + parseFloat(document.getElementById("d13").textContent) + parseFloat(document.getElementById("d19").textContent) + parseFloat(document.getElementById("d25").textContent))
     document.getElementById("d32").innerHTML = (parseFloat(document.getElementById("d2").textContent) + parseFloat(document.getElementById("d8").textContent) + parseFloat(document.getElementById("d14").textContent) + parseFloat(document.getElementById("d20").textContent) + parseFloat(document.getElementById("d26").textContent))
     document.getElementById("d33").innerHTML = (parseFloat(document.getElementById("d3").textContent) + parseFloat(document.getElementById("d9").textContent) + parseFloat(document.getElementById("d15").textContent) + parseFloat(document.getElementById("d21").textContent) + parseFloat(document.getElementById("d27").textContent))
     document.getElementById("d34").innerHTML = (parseFloat(document.getElementById("d4").textContent) + parseFloat(document.getElementById("d10").textContent) + parseFloat(document.getElementById("d16").textContent) + parseFloat(document.getElementById("d22").textContent) + parseFloat(document.getElementById("d28").textContent))
     document.getElementById("d35").innerHTML = (parseFloat(document.getElementById("d5").textContent) + parseFloat(document.getElementById("d11").textContent) + parseFloat(document.getElementById("d17").textContent) + parseFloat(document.getElementById("d23").textContent) + parseFloat(document.getElementById("d29").textContent))
     document.getElementById("d36").innerHTML = (parseFloat(document.getElementById("d6").textContent) + parseFloat(document.getElementById("d12").textContent) + parseFloat(document.getElementById("d18").textContent) + parseFloat(document.getElementById("d24").textContent) + parseFloat(document.getElementById("d30").textContent))
+
+    //addition talent total
+
+    //Nom Talent
+    document.getElementById("t31").innerHTML = (document.getElementById("t1").textContent  + document.getElementById("t6").textContent + document.getElementById("t11").textContent + document.getElementById("t16").textContent + document.getElementById("t21").textContent + document.getElementById("t26").textContent)
+
+
+    //Niv Talent 
+    document.getElementById("nt31").innerHTML = (parseFloat(document.getElementById("nt1").textContent))
+
 });
+
+
 
 function save() {
     document.getElementById("d37").innerHTML = document.getElementById("d31").textContent;
@@ -656,5 +706,5 @@ function save() {
     document.getElementById("d39").innerHTML = document.getElementById("d33").textContent;
     document.getElementById("d40").innerHTML = document.getElementById("d34").textContent;
     document.getElementById("d41").innerHTML = document.getElementById("d35").textContent;
-    document.getElementById("d41").innerHTML = document.getElementById("d36").textContent;
+    document.getElementById("d42").innerHTML = document.getElementById("d36").textContent;
 }                                         
