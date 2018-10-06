@@ -5,6 +5,8 @@
             <title>Database MHW Armor</title>
             <meta charset="utf-8">
             <link rel="stylesheet" type="text/css" href="../css/style.css">
+            <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+            <script> src="../js/app.js"</script>
         </head>
 
 
@@ -51,269 +53,568 @@
 
 
             <!-- Contenue en boîte -->
-            <div id="content">
+            <div id="content" >
 
                 <div class="c_left" style="text-align: center">
 
-                    <table style="width: 100%" border="1">
-                        <tbody>
-                            <tr>
-                                <td class="ligne">
-                                    <h4 style="text-align: center; color: #B4B5B5; font-weight: bold;">Equipments</h4>
-                                </td>
-                                <td class="ligne">
-                                    <h4 style="text-align: center; color: #B4B5B5; font-weight: bold;">Talents</h4>
-                                </td>
-                                <td class="ligne">
-                                    <h4 style="text-align: center; color: #B4B5B5; font-weight: bold;">Stats</h4>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="ligne" style="vertical-align: top ;">
-                                    <select class="shelmet" id="select1">
-                                        <option value="">Casque</option>
-                                        <option value="1">Cuir α</option>
-                                        <option value="2">Cuir β</option>
-                                        <option value="3">Maille α</option>
-                                        <option value="4">Maille β</option>
-                                        <option value="5">Chasseur α</option>
-                                        <option value="6">Chasseur β</option>
-                                        <option value="7">Os α</option>
-                                        <option value="8">Os β</option>
-                                        <option value="9">Vespoid α</option>
-                                        <option value="10">Vespoid β</option>
-                                    </select>
-                                </td>
-                                <td class="ligne">
-                                </td>
-                                <td class="ligne">
-                                    <div style="text-align: left">
-                                        <ul style="list-style-type: none; color: #B4B5B5">
-                                            <li style="font-weight: bold;">Défense:</li><br>
-                                            <li style="color:rgb(212, 16, 16) ">Feu:</li>
-                                            <li style="color:rgb(29, 29, 221) ">Eau:</li>
-                                            <li style="color:rgb(175, 175, 4) ">Foudre:</li>
-                                            <li style="color:rgb(3, 180, 180) ">Glace:</li>
-                                            <li style="color:rgb(175, 6, 175) ">Dragon:</li>
-                                        </ul>
-                                    </div>
-                                    <div style="text-align: center">
-                                        <ul style="list-style-type: none; color: #B4B5B5">
-                                            <li id="d1"></li><br>
-                                            <li id="d2"></li>
-                                            <li id="d3"></li>
-                                            <li id="d4"></li>
-                                            <li id="d5"></li>
-                                            <li id="d6"></li>
-                                        </ul>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="ligne" style="vertical-align: top ;">
-                                    <select class="schest" id="select2">
-                                        <option value="">Torse</option>
-                                        <option value="1">Cuir α</option>
-                                        <option value="2">Cuir β</option>
-                                        <option value="3">Maille α</option>
-                                        <option value="4">Maille β</option>
-                                        <option value="5">Chasseur α</option>
-                                        <option value="6">Chasseur β</option>
-                                        <option value="7">Os α</option>
-                                        <option value="8">Os β</option>
-                                        <option value="9">Vespoid α</option>
-                                        <option value="10">Vespoid β</option>
-                                    </select>
-                                </td>
-                                <td class="ligne">
-                                </td>
-                                <td class="ligne">
-                                    <div style="text-align: left">
-                                        <ul style="list-style-type: none; color: #B4B5B5">
-                                            <li style="font-weight: bold;">Défense:</li><br>
-                                            <li style="color:rgb(212, 16, 16) ">Feu:</li>
-                                            <li style="color:rgb(29, 29, 221) ">Eau:</li>
-                                            <li style="color:rgb(175, 175, 4) ">Foudre:</li>
-                                            <li style="color:rgb(3, 180, 180) ">Glace:</li>
-                                            <li style="color:rgb(175, 6, 175) ">Dragon:</li>
-                                        </ul>
-                                    </div>
-                                    <div style="text-align: center">
-                                        <ul style="list-style-type: none; color: #B4B5B5">
-                                            <li id="d7"></li><br>
-                                            <li id="d8"></li>
-                                            <li id="d9"></li>
-                                            <li id="d10"></li>
-                                            <li id="d11"></li>
-                                            <li id="d12"></li>
-                                        </ul>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="ligne" style="vertical-align: top ;">
-                                    <select class="sarms" id="select3">
-                                        <option value="">Bras</option>
-                                        <option value="1">Cuir α</option>
-                                        <option value="2">Cuir β</option>
-                                        <option value="3">Maille α</option>
-                                        <option value="4">Maille β</option>
-                                        <option value="5">Chasseur α</option>
-                                        <option value="6">Chasseur β</option>
-                                        <option value="7">Os α</option>
-                                        <option value="8">Os β</option>
-                                        <option value="9">Vespoid α</option>
-                                        <option value="10">Vespoid β</option>
-                                    </select>
-                                </td>
-                                <td class="ligne">
-                                </td>
-                                <td class="ligne">
-                                    <div style="text-align: left">
-                                        <ul style="list-style-type: none; color: #B4B5B5">
-                                            <li style="font-weight: bold;">Défense:</li><br>
-                                            <li style="color:rgb(212, 16, 16) ">Feu:</li>
-                                            <li style="color:rgb(29, 29, 221) ">Eau:</li>
-                                            <li style="color:rgb(175, 175, 4) ">Foudre:</li>
-                                            <li style="color:rgb(3, 180, 180) ">Glace:</li>
-                                            <li style="color:rgb(175, 6, 175) ">Dragon:</li>
-                                        </ul>
-                                    </div>
-                                    <div style="text-align: center">
-                                        <ul style="list-style-type: none; color: #B4B5B5">
-                                            <li id="d13"></li><br>
-                                            <li id="d14"></li>
-                                            <li id="d15"></li>
-                                            <li id="d16"></li>
-                                            <li id="d17"></li>
-                                            <li id="d18"></li>
-                                        </ul>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="ligne" style="vertical-align: top ;">
-                                    <select class="swaist" id="select4">
-                                        <option value="">Ceintures</option>
-                                        <option value="1">Cuir α</option>
-                                        <option value="2">Cuir β</option>
-                                        <option value="3">Maille α</option>
-                                        <option value="4">Maille β</option>
-                                        <option value="5">Chasseur α</option>
-                                        <option value="6">Chasseur β</option>
-                                        <option value="7">Os α</option>
-                                        <option value="8">Os β</option>
-                                        <option value="9">Vespoid α</option>
-                                        <option value="10">Vespoid β</option>
-                                    </select>
-                                </td>
-                                <td class="ligne">
-                                </td>
-                                <td class="ligne">
-                                    <div style="text-align: left">
-                                        <ul style="list-style-type: none; color: #B4B5B5">
-                                            <li style="font-weight: bold;">Défense:</li><br>
-                                            <li style="color:rgb(212, 16, 16) ">Feu:</li>
-                                            <li style="color:rgb(29, 29, 221) ">Eau:</li>
-                                            <li style="color:rgb(175, 175, 4) ">Foudre:</li>
-                                            <li style="color:rgb(3, 180, 180) ">Glace:</li>
-                                            <li style="color:rgb(175, 6, 175) ">Dragon:</li>
-                                        </ul>
-                                    </div>
-                                    <div style="text-align: center">
-                                        <ul style="list-style-type: none; color: #B4B5B5">
-                                            <li id="d19"></li><br>
-                                            <li id="d20"></li>
-                                            <li id="d21"></li>
-                                            <li id="d22"></li>
-                                            <li id="d23"></li>
-                                            <li id="d24"></li>
-                                        </ul>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td  class="ligne" style="vertical-align: top ;">
-                                    <select class="slegs" id="select5">
-                                        <option value="">Jambières</option>
-                                        <option value="1">Cuir α</option>
-                                        <option value="2">Cuir β</option>
-                                        <option value="3">Maille α</option>
-                                        <option value="4">Maille β</option>
-                                        <option value="5">Chasseur α</option>
-                                        <option value="6">Chasseur β</option>
-                                        <option value="7">Os α</option>
-                                        <option value="8">Os β</option>
-                                        <option value="9">Vespoid α</option>
-                                        <option value="10">Vespoid β</option>
-                                    </select>
-                                </td>
-                                <td  class="ligne">
+                        <table style="width: 100%; height: 500px; background-color: #3F4040;" border="1">
+                            <tbody>
+                                <tr> 
+                                    <td class="ligne">
+                                        <h4 style="text-align: center; color: #B4B5B5; font-weight: bold;">Equipments</h4>
+                                    </td>
+                                    <td class="ligne">
+                                        <h4 style="text-align: center; color: #B4B5B5; font-weight: bold;">Talents</h4>
+                                    </td>
+                                    <td class="ligne">
+                                        <h4 style="text-align: center; color: #B4B5B5; font-weight: bold;">Stats</h4>
+                                    </td>
+                                </tr>
 
-                                </td>
-                                <td  class="ligne">
-                                    <div style="text-align: left">
-                                        <ul style="list-style-type: none; color: #B4B5B5">
-                                            <li style="font-weight: bold;">Défense:</li><br>
-                                            <li style="color:rgb(212, 16, 16) ">Feu:</li>
-                                            <li style="color:rgb(29, 29, 221) ">Eau:</li>
-                                            <li style="color:rgb(175, 175, 4) ">Foudre:</li>
-                                            <li style="color:rgb(3, 180, 180) ">Glace:</li>
-                                            <li style="color:rgb(175, 6, 175) ">Dragon:</li>
-                                        </ul>
-                                    </div>
-                                    <div style="text-align: center">
-                                        <ul style="list-style-type: none; color: #B4B5B5">
-                                            <li id="d25"></li><br>
-                                            <li id="d26"></li>
-                                            <li id="d27"></li>
-                                            <li id="d28"></li>
-                                            <li id="d29"></li>
-                                            <li id="d30"></li>
-                                        </ul>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="ligne" style="vertical-align: top ;">
-                                    <select class="samulette" id="select6">
-                                        <option value="">Amulette</option>
-                                        <option value="1">Amulette1</option>
-                                        <option value="2">Amulette2</option>
-                                        <option value="3">Amulette3</option>
-                                        <option value="4">Amulette4</option>
-                                        <option value="5">Amulette5</option>
-                                        <option value="6">Amulette6</option>
-                                        <option value="7">Amulette7</option>
-                                        <option value="8">Amulette8</option>
-                                        <option value="9">Amulette9</option>
-                                        <option value="10">Amulette10</option>
-                                    </select>
-                                </td>
-                                <td class="ligne">
-                                </td>
-                                <td class="ligne">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                <tr>
+                                    <td class="ligne" style="vertical-align: top ;">
+                                        <select class="shelmet" id="select1">
+                                            <option value="">Casque</option>
+                                            <option value="1">Cuir α</option>
+                                            <option value="2">Cuir β</option>
+                                            <option value="3">Maille α</option>
+                                            <option value="4">Maille β</option>
+                                            <option value="5">Chasseur α</option>
+                                            <option value="6">Chasseur β</option>
+                                            <option value="7">Os α</option>
+                                            <option value="8">Os β</option>
+                                            <option value="9">Vespoid α</option>
+                                            <option value="10">Vespoid β</option>
+                                        </select>
+                                    </td>
+
+                                    <td class="ligne">
+                                        <div class="tal" style="text-align: left">
+                                            <ul style="list-style-type: none; color: #B4B5B5 ">
+                                                <li id="t1" style="font-weight: bold; background-color: #555555; text-align: center;"></li><br>
+                                                <li id="t2" style="font-weight: bold; background-color: #555555; text-align: center;"></li><br>
+                                                <li id="t3" style="font-weight: bold; background-color: #555555; text-align: center;"></li><br>
+                                                <li id="t4" style="font-weight: bold; background-color: #555555; text-align: center;"></li><br>
+                                                <li id="t5" style="font-weight: bold; background-color: #555555; text-align: center;"></li><br>
+                                            </ul>
+
+                                        </div>
+                                        <div class="tal" style="text-align: center">
+                                            <ul style="list-style-type: none; color: #B4B5B5;">
+                                                <li id="nt1" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px;"></li><br>
+                                                <li id="nt2" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px;"></li><br>
+                                                <li id="nt3" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px;"></li><br>
+                                                <li id="nt4" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px;"></li><br>
+                                                <li id="nt5" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px;"></li><br>
+                                            </ul>
+                                        </div>
+                                    </td>
+
+                                    <td class="ligne">
+                                        <div class="def" style="text-align: left">
+                                            <ul style="list-style-type: none; color: #B4B5B5">
+                                                <li style="font-weight: bold;">Défense:</li><br>
+                                                <li style="color:rgb(212, 16, 16) ">Feu:</li>
+                                                <li style="color:rgb(29, 29, 221) ">Eau:</li>
+                                                <li style="color:rgb(175, 175, 4) ">Foudre:</li>
+                                                <li style="color:rgb(3, 180, 180) ">Glace:</li>
+                                                <li style="color:rgb(175, 6, 175) ">Dragon:</li>
+                                            </ul>
+                                        </div>
+                                        <div class="def" style="text-align: center">
+                                            <ul style="list-style-type: none; color: #B4B5B5">
+                                                <li id="d1" style="font-weight: bold;">0</li><br>
+                                                <li id="d2" style="font-weight: bold;">0</li>
+                                                <li id="d3" style="font-weight: bold;">0</li>
+                                                <li id="d4" style="font-weight: bold;">0</li>
+                                                <li id="d5" style="font-weight: bold;">0</li>
+                                                <li id="d6" style="font-weight: bold;">0</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="ligne" style="vertical-align: top ;">
+                                        <select class="schest" id="select2">
+                                            <option value="">Torse</option>
+                                            <option value="1">Cuir α</option>
+                                            <option value="2">Cuir β</option>
+                                            <option value="3">Maille α</option>
+                                            <option value="4">Maille β</option>
+                                            <option value="5">Chasseur α</option>
+                                            <option value="6">Chasseur β</option>
+                                            <option value="7">Os α</option>
+                                            <option value="8">Os β</option>
+                                            <option value="9">Vespoid α</option>
+                                            <option value="10">Vespoid β</option>
+                                        </select>
+                                    </td>
+
+                                    <td class="ligne">
+                                        <div class="tal" style="text-align: left">
+                                            <ul style="list-style-type: none; color: #B4B5B5">
+                                                <li id="t6" style="font-weight: bold; background-color: #555555; text-align: center"></li><br>
+                                                <li id="t7" style="font-weight: bold; background-color: #555555; text-align: center"></li><br>
+                                                <li id="t8" style="font-weight: bold; background-color: #555555; text-align: center"></li><br>
+                                                <li id="t9" style="font-weight: bold; background-color: #555555; text-align: center"></li><br>
+                                                <li id="t10" style="font-weight: bold; background-color: #555555; text-align: center"></li><br>
+                                            </ul>
+
+                                        </div>
+                                        <div class="tal" style="text-align: center">
+                                            <ul style="list-style-type: none; color: #B4B5B5">
+                                                <li id="nt6" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px"></li><br>
+                                                <li id="nt7" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px"></li><br>
+                                                <li id="nt8" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px"></li><br>
+                                                <li id="nt9" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px"></li><br>
+                                                <li id="nt10" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px"></li><br>
+                                            </ul>
+                                        </div>
+                                    </td>
+
+                                    <td class="ligne">
+                                        <div class="def" style="text-align: left">
+                                            <ul style="list-style-type: none; color: #B4B5B5">
+                                                <li style="font-weight: bold;">Défense:</li><br>
+                                                <li style="color:rgb(212, 16, 16) ">Feu:</li>
+                                                <li style="color:rgb(29, 29, 221) ">Eau:</li>
+                                                <li style="color:rgb(175, 175, 4) ">Foudre:</li>
+                                                <li style="color:rgb(3, 180, 180) ">Glace:</li>
+                                                <li style="color:rgb(175, 6, 175) ">Dragon:</li>
+                                            </ul>
+                                        </div>
+                                        <div class="def" style="text-align: center">
+                                            <ul style="list-style-type: none; color: #B4B5B5">
+                                                <li id="d7" style="font-weight: bold;">0</li><br>
+                                                <li id="d8" style="font-weight: bold;">0</li>
+                                                <li id="d9" style="font-weight: bold;">0</li>
+                                                <li id="d10" style="font-weight: bold;">0</li>
+                                                <li id="d11" style="font-weight: bold;">0</li>
+                                                <li id="d12" style="font-weight: bold;">0</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="ligne" style="vertical-align: top ;">
+                                        <select class="sarms" id="select3">
+                                            <option value="">Bras</option>
+                                            <option value="1">Cuir α</option>
+                                            <option value="2">Cuir β</option>
+                                            <option value="3">Maille α</option>
+                                            <option value="4">Maille β</option>
+                                            <option value="5">Chasseur α</option>
+                                            <option value="6">Chasseur β</option>
+                                            <option value="7">Os α</option>
+                                            <option value="8">Os β</option>
+                                            <option value="9">Vespoid α</option>
+                                            <option value="10">Vespoid β</option>
+                                        </select>
+                                    </td>
+
+                                    <td class="ligne">
+                                        <div class="tal" style="text-align: left">
+                                            <ul style="list-style-type: none; color: #B4B5B5">
+                                                <li id="t11" style="font-weight: bold; background-color: #555555; text-align: center"></li><br>
+                                                <li id="t12" style="font-weight: bold; background-color: #555555; text-align: center"></li><br>
+                                                <li id="t13" style="font-weight: bold; background-color: #555555; text-align: center"></li><br>
+                                                <li id="t14" style="font-weight: bold; background-color: #555555; text-align: center"></li><br>
+                                                <li id="t15" style="font-weight: bold; background-color: #555555; text-align: center"></li><br>
+                                            </ul>
+                                        
+                                        </div>
+                                        <div class="tal" style="text-align: center">
+                                            <ul style="list-style-type: none; color: #B4B5B5">
+                                                <li id="nt11" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px"></li><br>
+                                                <li id="nt12" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px"></li><br>
+                                                <li id="nt13" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px"></li><br>
+                                                <li id="nt14" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px"></li><br>
+                                                <li id="nt15" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px"></li><br>
+                                            </ul>
+                                        </div>
+                                    </td>
+
+                                    <td class="ligne">
+                                        <div class="def" style="text-align: left">
+                                            <ul style="list-style-type: none; color: #B4B5B5">
+                                                <li style="font-weight: bold;">Défense:</li><br>
+                                                <li style="color:rgb(212, 16, 16) ">Feu:</li>
+                                                <li style="color:rgb(29, 29, 221) ">Eau:</li>
+                                                <li style="color:rgb(175, 175, 4) ">Foudre:</li>
+                                                <li style="color:rgb(3, 180, 180) ">Glace:</li>
+                                                <li style="color:rgb(175, 6, 175) ">Dragon:</li>
+                                            </ul>
+                                        </div>
+                                        <div class="def" style="text-align: center">
+                                            <ul style="list-style-type: none; color: #B4B5B5">
+                                                <li id="d13" style="font-weight: bold;">0</li><br>
+                                                <li id="d14" style="font-weight: bold;">0</li>
+                                                <li id="d15" style="font-weight: bold;">0</li>
+                                                <li id="d16" style="font-weight: bold;">0</li>
+                                                <li id="d17" style="font-weight: bold;">0</li>
+                                                <li id="d18" style="font-weight: bold;">0</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="ligne" style="vertical-align: top ;">
+                                        <select class="swaist" id="select4">
+                                            <option value="">Ceintures</option>
+                                            <option value="1">Cuir α</option>
+                                            <option value="2">Cuir β</option>
+                                            <option value="3">Maille α</option>
+                                            <option value="4">Maille β</option>
+                                            <option value="5">Chasseur α</option>
+                                            <option value="6">Chasseur β</option>
+                                            <option value="7">Os α</option>
+                                            <option value="8">Os β</option>
+                                            <option value="9">Vespoid α</option>
+                                            <option value="10">Vespoid β</option>
+                                        </select>
+                                    </td>
+
+                                    <td class="ligne">
+                                        <div class="tal" style="text-align: left">
+                                            <ul style="list-style-type: none; color: #B4B5B5">
+                                                <li id="t16" style="font-weight: bold; background-color: #555555; text-align: center"></li><br>
+                                                <li id="t17" style="font-weight: bold; background-color: #555555; text-align: center"></li><br>
+                                                <li id="t18" style="font-weight: bold; background-color: #555555; text-align: center"></li><br>
+                                                <li id="t19" style="font-weight: bold; background-color: #555555; text-align: center"></li><br>
+                                                <li id="t20" style="font-weight: bold; background-color: #555555; text-align: center"></li><br>
+                                            </ul>
+                                        
+                                        </div>
+                                        <div class="tal" style="text-align: center">
+                                            <ul style="list-style-type: none; color: #B4B5B5">
+                                                <li id="nt16" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px"></li><br>
+                                                <li id="nt17" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px"></li><br>
+                                                <li id="nt18" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px"></li><br>
+                                                <li id="nt19" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px"></li><br>
+                                                <li id="nt20" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px"></li><br>
+                                            </ul>
+                                        </div>
+                                    </td>
+
+                                    <td class="ligne">
+                                        <div class="def" style="text-align: left">
+                                            <ul style="list-style-type: none; color: #B4B5B5">
+                                                <li style="font-weight: bold;">Défense:</li><br>
+                                                <li style="color:rgb(212, 16, 16) ">Feu:</li>
+                                                <li style="color:rgb(29, 29, 221) ">Eau:</li>
+                                                <li style="color:rgb(175, 175, 4) ">Foudre:</li>
+                                                <li style="color:rgb(3, 180, 180) ">Glace:</li>
+                                                <li style="color:rgb(175, 6, 175) ">Dragon:</li>
+                                            </ul>
+                                        </div>
+                                        <div class="def" style="text-align: center">
+                                            <ul style="list-style-type: none; color: #B4B5B5">
+                                                <li id="d19" style="font-weight: bold;">0</li><br>
+                                                <li id="d20" style="font-weight: bold;">0</li>
+                                                <li id="d21" style="font-weight: bold;">0</li>
+                                                <li id="d22" style="font-weight: bold;">0</li>
+                                                <li id="d23" style="font-weight: bold;">0</li>
+                                                <li id="d24" style="font-weight: bold;">0</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td  class="ligne" style="vertical-align: top ;">
+                                        <select class="slegs" id="select5">
+                                            <option value="">Jambières</option>
+                                            <option value="1">Cuir α</option>
+                                            <option value="2">Cuir β</option>
+                                            <option value="3">Maille α</option>
+                                            <option value="4">Maille β</option>
+                                            <option value="5">Chasseur α</option>
+                                            <option value="6">Chasseur β</option>
+                                            <option value="7">Os α</option>
+                                            <option value="8">Os β</option>
+                                            <option value="9">Vespoid α</option>
+                                            <option value="10">Vespoid β</option>
+                                        </select>
+                                    </td>
+
+                                    <td  class="ligne">
+                                        <div class="tal" style="text-align: left">
+                                            <ul style="list-style-type: none; color: #B4B5B5">
+                                                <li id="t21" style="font-weight: bold; background-color: #555555; text-align: center"></li><br>
+                                                <li id="t22" style="font-weight: bold; background-color: #555555; text-align: center"></li><br>
+                                                <li id="t23" style="font-weight: bold; background-color: #555555; text-align: center"></li><br>
+                                                <li id="t24" style="font-weight: bold; background-color: #555555; text-align: center"></li><br>
+                                                <li id="t25" style="font-weight: bold; background-color: #555555; text-align: center"></li><br>
+                                            </ul>
+                                        
+                                        </div>
+                                        <div class="tal" style="text-align: center">
+                                            <ul style="list-style-type: none; color: #B4B5B5">
+                                                <li id="nt21" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px"></li><br>
+                                                <li id="nt22" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px"></li><br>
+                                                <li id="nt23" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px"></li><br>
+                                                <li id="nt24" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px"></li><br>
+                                                <li id="nt25" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px"></li><br>
+                                            </ul>
+                                        </div>
+                                    </td>
+
+                                    <td  class="ligne">
+                                        <div class="def" style="text-align: left">
+                                            <ul style="list-style-type: none; color: #B4B5B5">
+                                                <li style="font-weight: bold;">Défense:</li><br>
+                                                <li style="color:rgb(212, 16, 16) ">Feu:</li>
+                                                <li style="color:rgb(29, 29, 221) ">Eau:</li>
+                                                <li style="color:rgb(175, 175, 4) ">Foudre:</li>
+                                                <li style="color:rgb(3, 180, 180) ">Glace:</li>
+                                                <li style="color:rgb(175, 6, 175) ">Dragon:</li>
+                                            </ul>
+                                        </div>
+                                        <div class="def" style="text-align: center">
+                                            <ul style="list-style-type: none; color: #B4B5B5">
+                                                <li id="d25" style="font-weight: bold;">0</li><br>
+                                                <li id="d26" style="font-weight: bold;">0</li>
+                                                <li id="d27" style="font-weight: bold;">0</li>
+                                                <li id="d28" style="font-weight: bold;">0</li>
+                                                <li id="d29" style="font-weight: bold;">0</li>
+                                                <li id="d30" style="font-weight: bold;">0</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="ligne" style="vertical-align: top ;">
+                                        <select class="samulette" id="select6">
+                                            <option value="">Amulette</option>
+                                            <option value="1">Amulette1</option>
+                                            <option value="2">Amulette2</option>
+                                            <option value="3">Amulette3</option>
+                                            <option value="4">Amulette4</option>
+                                            <option value="5">Amulette5</option>
+                                            <option value="6">Amulette6</option>
+                                            <option value="7">Amulette7</option>
+                                            <option value="8">Amulette8</option>
+                                            <option value="9">Amulette9</option>
+                                            <option value="10">Amulette10</option>
+                                        </select>
+                                    </td>
+
+                                    <td class="ligne">
+                                        <div class="tal" style="text-align: left">
+                                            <ul style="list-style-type: none; color: #B4B5B5">
+                                                <li id="t26" style="font-weight: bold; background-color: #555555; text-align: center"></li><br>
+                                                <li id="t27" style="font-weight: bold; background-color: #555555; text-align: center"></li><br>
+                                                <li id="t28" style="font-weight: bold; background-color: #555555; text-align: center"></li><br>
+                                                <li id="t29" style="font-weight: bold; background-color: #555555; text-align: center"></li><br>
+                                                <li id="t30" style="font-weight: bold; background-color: #555555; text-align: center"></li><br>
+                                            </ul>
+                                        
+                                        </div>
+                                        <div class="tal" style="text-align: center">
+                                            <ul style="list-style-type: none; color: #B4B5B5">
+                                                <li id="nt26" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px"></li><br>
+                                                <li id="nt27" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px"></li><br>
+                                                <li id="nt28" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px"></li><br>
+                                                <li id="nt29" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px"></li><br>
+                                                <li id="nt30" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px"></li><br>
+                                            </ul>
+                                        </div>
+                                    </td>
 
 
+                                </tr>
+
+                            </tbody>
+                        </table>
 
                 </div>
 
                 <div class="c_right" style="text-align: center">
 
+                    <div class="d_left" style="text-align: center">
+
+                        <div>
+                            <table style="width: 100%; background-color: #3F4040;" border="1">
+                                <tbody>
+
+                                    <tr>
+                                        <td>
+                                            <h4 style="text-align: center; color: #B4B5B5; font-weight: bold;">Défence Total</h4>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="def" style="text-align: left">
+                                                <ul style="list-style-type: none; color: #B4B5B5">
+                                                    <li style="font-weight: bold;">Défense:</li><br>
+                                                    <li style="color:rgb(212, 16, 16) ">Feu:</li>
+                                                    <li style="color:rgb(29, 29, 221) ">Eau:</li>
+                                                    <li style="color:rgb(175, 175, 4) ">Foudre:</li>
+                                                    <li style="color:rgb(3, 180, 180) ">Glace:</li>
+                                                    <li style="color:rgb(175, 6, 175) ">Dragon:</li>
+                                                </ul>
+                                            </div>
+                                            <div class="def" style="text-align: center">
+                                                <ul style="list-style-type: none; color: #B4B5B5">
+                                                    <li id="d31" style="font-weight: bold;">0</li><br>
+                                                    <li id="d32" style="font-weight: bold;">0</li>
+                                                    <li id="d33" style="font-weight: bold;">0</li>
+                                                    <li id="d34" style="font-weight: bold;">0</li>
+                                                    <li id="d35" style="font-weight: bold;">0</li>
+                                                    <li id="d36" style="font-weight: bold;">0</li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <br>
+
+                        <div>
+                            <table style="width: 100%; background-color: #3F4040;" border="1">
+                                <tbody>
+
+                                    <tr>
+                                        <td>
+                                            <h4 style="text-align: center; color: #B4B5B5; font-weight: bold;">Talents</h4>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="tal" style="text-align: left">
+                                                <ul style="list-style-type: none; color: #B4B5B5">
+                                                    <li id="t31" style="font-weight: bold; background-color: #555555; text-align: center"></li><br>
+                                                    <li id="t32" style="font-weight: bold; background-color: #555555; text-align: center"></li><br>
+                                                    <li id="t33" style="font-weight: bold; background-color: #555555; text-align: center"></li><br>
+                                                    <li id="t34" style="font-weight: bold; background-color: #555555; text-align: center"></li><br>
+                                                    <li id="t35" style="font-weight: bold; background-color: #555555; text-align: center"></li><br>
+                                                </ul>
+                                            
+                                            </div>
+                                            <div class="tal" style="text-align: center">
+                                                <ul style="list-style-type: none; color: #B4B5B5">
+                                                    <li id="nt31" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px"></li><br>
+                                                    <li id="nt32" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px"></li><br>
+                                                    <li id="nt33" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px"></li><br>
+                                                    <li id="nt34" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px"></li><br>
+                                                    <li id="nt35" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px"></li><br>
+                                                </ul>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                    </div>
+
+                    <div class="d_center"></div>
+
+                    <div class="d_right">
+                        <div>
+                            <table style="width: 100%; background-color: #3F4040;" border="1">
+                            <tbody>
+                        
+                                <tr>
+                                    <td>
+                                        <h4 style="text-align: center; color: #B4B5B5; font-weight: bold;">Défence Total</h4>
+                                    </td>
+                                </tr>
+                        
+                                <tr>
+                                    <td>
+                                        <div class="def" style="text-align: left">
+                                            <ul style="list-style-type: none; color: #B4B5B5">
+                                                <li style="font-weight: bold;">Défense:</li><br>
+                                                <li style="color:rgb(212, 16, 16) ">Feu:</li>
+                                                <li style="color:rgb(29, 29, 221) ">Eau:</li>
+                                                <li style="color:rgb(175, 175, 4) ">Foudre:</li>
+                                                <li style="color:rgb(3, 180, 180) ">Glace:</li>
+                                                <li style="color:rgb(175, 6, 175) ">Dragon:</li>
+                                            </ul>
+                                        </div>
+                                        <div class="def" style="text-align: center">
+                                            <ul style="list-style-type: none; color: #B4B5B5">
+                                                <li id="d37" style="font-weight: bold;">0</li><br>
+                                                <li id="d38" style="font-weight: bold;">0</li>
+                                                <li id="d39" style="font-weight: bold;">0</li>
+                                                <li id="d40" style="font-weight: bold;">0</li>
+                                                <li id="d41" style="font-weight: bold;">0</li>
+                                                <li id="d42" style="font-weight: bold;">0</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                        
+                            </tbody>
+                        </table>
+                    </div>
+                    <br>
+                    <div>
+                        <table style="width: 100%; background-color: #3F4040;" border="1">
+                            <tbody>
+                        
+                                <tr>
+                                    <td>
+                                        <h4 style="text-align: center; color: #B4B5B5; font-weight: bold;">Talents</h4>
+                                    </td>
+                                </tr>
+                        
+                                <tr>
+                                    <td>
+                                        <div class="tal" style="text-align: left">
+                                            <ul style="list-style-type: none; color: #B4B5B5">
+                                                <li id="t31" style="font-weight: bold; background-color: #555555; text-align: center"></li><br>
+                                                <li id="t32" style="font-weight: bold; background-color: #555555; text-align: center"></li><br>
+                                                <li id="t33" style="font-weight: bold; background-color: #555555; text-align: center"></li><br>
+                                                <li id="t34" style="font-weight: bold; background-color: #555555; text-align: center"></li><br>
+                                                <li id="t35" style="font-weight: bold; background-color: #555555; text-align: center"></li><br>
+                                            </ul>
+                        
+                                        </div>
+                                        <div class="tal" style="text-align: center">
+                                            <ul style="list-style-type: none; color: #B4B5B5">
+                                                <li id="nt31" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px"></li><br>
+                                                <li id="nt32" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px"></li><br>
+                                                <li id="nt33" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px"></li><br>
+                                                <li id="nt34" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px"></li><br>
+                                                <li id="nt35" style="font-weight: bold; background-color: #555555; text-align: center; margin-right: 50px"></li><br>
+                                            </ul>
+                                        </div>
+                                    </td>
+                        
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <br>
+                    <button class="button" onclick="save()">Save</button>
+                    </div>
+
+  
                 </div>
 
             </div>
+
+
 
         </body>
 
         <!-- Bas de page -->
 
         <footer style="text-align: center">
-            <br>Créé par Luffy_Vanquish
+            <br><div> Créé par Luffy_Vanquish </div><br>
             <script type="text/javascript" src="../js/app.js"></script>
         </footer>
 

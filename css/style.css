@@ -1,6 +1,16 @@
 
+html {
+    height: 100%;
+}
+
 body{
     background-color: #333333;
+
+}
+
+footer{
+    color: rgb(99, 102, 102);
+
 }
 
 h1.title{
@@ -8,24 +18,74 @@ h1.title{
     
 }
 
-div#content div{
-    display: inline-block;
-    width: 48%;
-
-}
+/* tout les div */
+/*div#content div{ }*/
 
 div#content div.c_left{
+    display: inline-block;
+    width: 48%;
     vertical-align: top;
-    background-color: #3F4040;
     height: 100%;
-
+    margin-left: 33px;
 }
 
 div#content div.c_right{
+    display: inline-block;
+    width: 48%;
     vertical-align: top;
-    background-color: #3F4040;
+
     height: 100%;
 
+
+}
+
+div#content div.c_right div.d_left{
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+    height: 100%;
+
+    
+}
+
+div#content div.c_right div.d_center{
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+    height: 100%;
+
+}
+
+div#content div.c_right div.d_right{
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+    height: 100%;
+
+}
+
+button.button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.button:hover{
+    background-color: green;
+}
+
+div.def{
+    display: inline-block;
+    width: 48%;
+}
+
+div.tal{
+    display: inline-block;
+    width: 48%;
 }
 
 nav.menu-nav ul li.btn{
@@ -49,10 +109,7 @@ nav.menu-nav ul li.btn:hover a{
     transition: 0.25s all;
 }
 
-footer{
-    color: rgb(99, 102, 102);
 
-}
 
 ul.list_btn{
     background-color: #555555;
@@ -80,6 +137,7 @@ ul.armor{
         background-color: #B4B5B5;
         padding: 10px;
         width: 100%;
+        
     }
     select.swaist{
         background-color: #B4B5B5;
@@ -96,10 +154,11 @@ ul.armor{
         padding: 10px;
         width: 100%;
     }
-    /*ligne*/
+    /*case*/
     td.ligne{
         text-align: left;
         width: 33%;
         height: 33%;
     }
+
 
